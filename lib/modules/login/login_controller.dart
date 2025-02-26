@@ -62,9 +62,10 @@ class LoginController extends GetxController {
     showLoading.value = false;
 
     if (emailController.text == 'admin@gmail.com' &&
-        passwordController.text == "admin")
+        passwordController.text == "admin") {
       trigSuccess?.change(true);
-    else
+    } else {
       trigFail?.change(true);
+    }
   }
 }

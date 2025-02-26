@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ).copyWith(
           colorScheme:
               ThemeData().colorScheme.copyWith(primary: ThemeColor.primary)),
-      home: LoginPage(),
+      home: const LoginPage(),
       initialBinding: LoginBinding(),
       getPages: AppPages.pages,
     );

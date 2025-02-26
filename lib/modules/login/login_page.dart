@@ -27,7 +27,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 64,
                     ),
                     Row(
@@ -35,10 +35,10 @@ class LoginPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset('assets/images/logo.png'),
-                        SizedBox(
+                        const SizedBox(
                           width: 12,
                         ),
-                        Column(
+                        const Column(
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -96,14 +96,14 @@ class LoginPage extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(24),
                       child: Column(children: [
-                        Text(
+                        const Text(
                           "Login",
                           style: TextStyle(
                               fontSize: 32,
                               color: ThemeColor.darkBlue,
                               fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         ),
                         TextFormField(
@@ -112,20 +112,20 @@ class LoginPage extends StatelessWidget {
                           cursorColor: ThemeColor.black,
                           keyboardType: TextInputType.emailAddress,
                           style:
-                              TextStyle(color: ThemeColor.black, fontSize: 14),
+                              const TextStyle(color: ThemeColor.black, fontSize: 14),
                           decoration: InputDecoration(
-                            contentPadding: EdgeInsets.all(12),
+                            contentPadding: const EdgeInsets.all(12),
                             floatingLabelBehavior: FloatingLabelBehavior.auto,
                             focusedBorder: const UnderlineInputBorder(
                                 borderSide:
-                                    const BorderSide(color: ThemeColor.black)),
-                            enabledBorder: UnderlineInputBorder(
+                                    BorderSide(color: ThemeColor.black)),
+                            enabledBorder: const UnderlineInputBorder(
                                 borderSide:
                                     BorderSide(color: ThemeColor.grey_500)),
                             label: RichText(
-                                text: TextSpan(
+                                text: const TextSpan(
                                     text: "Email",
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                         fontSize: 14, color: ThemeColor.grey),
                                     children: [
                                   TextSpan(
@@ -138,7 +138,7 @@ class LoginPage extends StatelessWidget {
                           textInputAction: TextInputAction.next,
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         TextFormField(
@@ -147,22 +147,22 @@ class LoginPage extends StatelessWidget {
                           obscureText: loginController.passwordInVisible.value,
                           cursorColor: ThemeColor.black,
                           style:
-                              TextStyle(color: ThemeColor.black, fontSize: 14),
+                              const TextStyle(color: ThemeColor.black, fontSize: 14),
                           enableSuggestions: false,
                           autocorrect: false,
                           decoration: InputDecoration(
-                              contentPadding: EdgeInsets.all(12),
+                              contentPadding: const EdgeInsets.all(12),
                               floatingLabelBehavior: FloatingLabelBehavior.auto,
                               focusedBorder: const UnderlineInputBorder(
-                                  borderSide: const BorderSide(
+                                  borderSide: BorderSide(
                                       color: ThemeColor.black)),
-                              enabledBorder: UnderlineInputBorder(
+                              enabledBorder: const UnderlineInputBorder(
                                   borderSide:
                                       BorderSide(color: ThemeColor.grey_500)),
                               label: RichText(
-                                  text: TextSpan(
+                                  text: const TextSpan(
                                       text: "Password",
-                                      style: const TextStyle(
+                                      style: TextStyle(
                                           fontSize: 14, color: ThemeColor.grey),
                                       children: [
                                     TextSpan(
@@ -172,14 +172,14 @@ class LoginPage extends StatelessWidget {
                                         ))
                                   ])),
                               suffixText: "Forgot?",
-                              suffixStyle: TextStyle(
+                              suffixStyle: const TextStyle(
                                   fontSize: 14,
                                   color: ThemeColor.black,
                                   fontWeight: FontWeight.bold)),
                           textInputAction: TextInputAction.next,
                           autovalidateMode: AutovalidateMode.onUserInteraction,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         ),
                         SizedBox(
@@ -201,22 +201,22 @@ class LoginPage extends StatelessWidget {
                                       ),
                                     ),
                                   )),
-                              label: Text("Log in"),
+                              label: const Text("Log in"),
                               style: TextButton.styleFrom(
-                                textStyle: TextStyle(
+                                textStyle: const TextStyle(
                                     fontSize: 16, fontWeight: FontWeight.w500),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
                                 backgroundColor: ThemeColor.black,
                               ),
                             )),
-                        SizedBox(height: 44),
-                        Text(
+                        const SizedBox(height: 44),
+                        const Text(
                           "Or continue with",
                           style:
                               TextStyle(fontSize: 14, color: ThemeColor.grey),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Row(
@@ -231,13 +231,13 @@ class LoginPage extends StatelessWidget {
                                       width: 16,
                                       height: 16,
                                     ),
-                                    label: Text(
+                                    label: const Text(
                                       "Google",
                                       style: TextStyle(
                                           color: ThemeColor.textPrimary),
                                     ),
                                     style: TextButton.styleFrom(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                         fontSize: 14,
                                       ),
                                       shape: RoundedRectangleBorder(
@@ -247,7 +247,7 @@ class LoginPage extends StatelessWidget {
                                     ),
                                   )),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             Expanded(
@@ -260,13 +260,13 @@ class LoginPage extends StatelessWidget {
                                       width: 16,
                                       height: 16,
                                     ),
-                                    label: Text(
+                                    label: const Text(
                                       "Facebook",
                                       style: TextStyle(
                                           color: ThemeColor.textPrimary),
                                     ),
                                     style: TextButton.styleFrom(
-                                      textStyle: TextStyle(
+                                      textStyle: const TextStyle(
                                           fontSize: 14, color: ThemeColor.grey),
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
@@ -277,11 +277,11 @@ class LoginPage extends StatelessWidget {
                             ),
                           ],
                         ),
-                        SizedBox(height: 32),
+                        const SizedBox(height: 32),
                         RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                                 text: "Don't have account?",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     fontSize: 14, color: ThemeColor.grey),
                                 children: [
                               TextSpan(

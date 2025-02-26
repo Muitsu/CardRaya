@@ -8,7 +8,7 @@ class AppPages {
   static final List<GetPage> pages = [
     GetPage(
       name: AppRoutes.loginPage,
-      page: () => LoginPage(),
+      page: () => const LoginPage(),
       binding: LoginBinding(),
     ),
   ];

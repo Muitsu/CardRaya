@@ -1,3 +1,5 @@
+// ignore_for_file: use_full_hex_values_for_flutter_colors
+
 import 'dart:ui';
 import 'package:flutter/material.dart';
 
@@ -14,7 +16,7 @@ class ThemeColor {
   static const Color green = Color(0xff4CAF50);
   static const Color darkBlue = Color(0xff1E293B);
   static const Color blue = Color(0xff297dfe);
-  static const Color lightBlue = Color(0xffA6297DFE);
+  static const Color lightBlue = Color(0xffa6297dfe);
   static const Color textPrimary = Color(0xff3c4144);
   static const Color textSecondary = Color(0xff8B8C8D);
   static const Color grey_50 = Color(0xffFAFAFA);
