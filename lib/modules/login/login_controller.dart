@@ -1,3 +1,4 @@
+import 'package:card_raya/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:rive/rive.dart';
@@ -54,18 +55,20 @@ class LoginController extends GetxController {
   void login() async {
     emailFocusNode.unfocus();
     passwordFocusNode.unfocus();
-    showLoading.value = true;
-    //* delay by 2s
-    await Future.delayed(
-      const Duration(seconds: 2),
-    );
-    showLoading.value = false;
+    Get.to(() => const HomePage());
 
-    if (emailController.text == 'admin@gmail.com' &&
-        passwordController.text == "admin") {
-      trigSuccess?.change(true);
-    } else {
-      trigFail?.change(true);
-    }
+    // showLoading.value = true;
+    //* delay by 2s
+    // await Future.delayed(
+    //   const Duration(seconds: 2),
+    // );
+    // showLoading.value = false;
+
+    // if (emailController.text == 'admin@gmail.com' &&
+    //     passwordController.text == "admin") {
+    //   trigSuccess?.change(true);
+    // } else {
+    //   trigFail?.change(true);
+    // }
   }
 }

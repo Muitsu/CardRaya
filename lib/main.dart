@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'modules/login/login_binding.dart';
 import 'modules/login/login_page.dart';
-import 'routes/app_routes.dart';
+// import 'routes/app_routes.dart';
 import 'themes/colors_theme.dart';
 
 void main() async {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       title: 'Login',
       theme: ThemeData(
         fontFamily: GoogleFonts.lato().fontFamily,
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
               ThemeData().colorScheme.copyWith(primary: ThemeColor.primary)),
       home: const LoginPage(),
       initialBinding: LoginBinding(),
-      getPages: AppPages.pages,
+      // getPages: AppPages.pages,
     );
   }
 }

@@ -111,8 +111,8 @@ class LoginPage extends StatelessWidget {
                           controller: loginController.emailController,
                           cursorColor: ThemeColor.black,
                           keyboardType: TextInputType.emailAddress,
-                          style:
-                              const TextStyle(color: ThemeColor.black, fontSize: 14),
+                          style: const TextStyle(
+                              color: ThemeColor.black, fontSize: 14),
                           decoration: InputDecoration(
                             contentPadding: const EdgeInsets.all(12),
                             floatingLabelBehavior: FloatingLabelBehavior.auto,
@@ -146,16 +146,16 @@ class LoginPage extends StatelessWidget {
                           controller: loginController.passwordController,
                           obscureText: loginController.passwordInVisible.value,
                           cursorColor: ThemeColor.black,
-                          style:
-                              const TextStyle(color: ThemeColor.black, fontSize: 14),
+                          style: const TextStyle(
+                              color: ThemeColor.black, fontSize: 14),
                           enableSuggestions: false,
                           autocorrect: false,
                           decoration: InputDecoration(
                               contentPadding: const EdgeInsets.all(12),
                               floatingLabelBehavior: FloatingLabelBehavior.auto,
                               focusedBorder: const UnderlineInputBorder(
-                                  borderSide: BorderSide(
-                                      color: ThemeColor.black)),
+                                  borderSide:
+                                      BorderSide(color: ThemeColor.black)),
                               enabledBorder: const UnderlineInputBorder(
                                   borderSide:
                                       BorderSide(color: ThemeColor.grey_500)),
@@ -210,86 +210,86 @@ class LoginPage extends StatelessWidget {
                                 backgroundColor: ThemeColor.black,
                               ),
                             )),
-                        const SizedBox(height: 44),
-                        const Text(
-                          "Or continue with",
-                          style:
-                              TextStyle(fontSize: 14, color: ThemeColor.grey),
-                        ),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                        Row(
-                          children: [
-                            Expanded(
-                              child: SizedBox(
-                                  height: 36,
-                                  child: ElevatedButton.icon(
-                                    onPressed: () {},
-                                    icon: Image.asset(
-                                      "assets/images/google_icon.png",
-                                      width: 16,
-                                      height: 16,
-                                    ),
-                                    label: const Text(
-                                      "Google",
-                                      style: TextStyle(
-                                          color: ThemeColor.textPrimary),
-                                    ),
-                                    style: TextButton.styleFrom(
-                                      textStyle: const TextStyle(
-                                        fontSize: 14,
-                                      ),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                      backgroundColor: ThemeColor.grey_200,
-                                    ),
-                                  )),
-                            ),
-                            const SizedBox(
-                              width: 12,
-                            ),
-                            Expanded(
-                              child: SizedBox(
-                                  height: 36,
-                                  child: ElevatedButton.icon(
-                                    onPressed: () {},
-                                    icon: Image.asset(
-                                      "assets/images/facebook_icon.png",
-                                      width: 16,
-                                      height: 16,
-                                    ),
-                                    label: const Text(
-                                      "Facebook",
-                                      style: TextStyle(
-                                          color: ThemeColor.textPrimary),
-                                    ),
-                                    style: TextButton.styleFrom(
-                                      textStyle: const TextStyle(
-                                          fontSize: 14, color: ThemeColor.grey),
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                      backgroundColor: ThemeColor.grey_200,
-                                    ),
-                                  )),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 32),
-                        RichText(
-                            text: const TextSpan(
-                                text: "Don't have account?",
-                                style: TextStyle(
-                                    fontSize: 14, color: ThemeColor.grey),
-                                children: [
-                              TextSpan(
-                                  text: " Create now",
-                                  style: TextStyle(
-                                      color: ThemeColor.black,
-                                      fontWeight: FontWeight.bold))
-                            ])),
+                        // const SizedBox(height: 44),
+                        // const Text(
+                        //   "Or continue with",
+                        //   style:
+                        //       TextStyle(fontSize: 14, color: ThemeColor.grey),
+                        // ),
+                        // const SizedBox(
+                        //   height: 16,
+                        // ),
+                        // Row(
+                        //   children: [
+                        //     Expanded(
+                        //       child: SizedBox(
+                        //           height: 36,
+                        //           child: ElevatedButton.icon(
+                        //             onPressed: () {},
+                        //             icon: Image.asset(
+                        //               "assets/images/google_icon.png",
+                        //               width: 16,
+                        //               height: 16,
+                        //             ),
+                        //             label: const Text(
+                        //               "Google",
+                        //               style: TextStyle(
+                        //                   color: ThemeColor.textPrimary),
+                        //             ),
+                        //             style: TextButton.styleFrom(
+                        //               textStyle: const TextStyle(
+                        //                 fontSize: 14,
+                        //               ),
+                        //               shape: RoundedRectangleBorder(
+                        //                   borderRadius:
+                        //                       BorderRadius.circular(10)),
+                        //               backgroundColor: ThemeColor.grey_200,
+                        //             ),
+                        //           )),
+                        //     ),
+                        // const SizedBox(
+                        //   width: 12,
+                        // ),
+                        // Expanded(
+                        //   child: SizedBox(
+                        //       height: 36,
+                        //       child: ElevatedButton.icon(
+                        //         onPressed: () {},
+                        //         icon: Image.asset(
+                        //           "assets/images/facebook_icon.png",
+                        //           width: 16,
+                        //           height: 16,
+                        //         ),
+                        //         label: const Text(
+                        //           "Facebook",
+                        //           style: TextStyle(
+                        //               color: ThemeColor.textPrimary),
+                        //         ),
+                        //         style: TextButton.styleFrom(
+                        //           textStyle: const TextStyle(
+                        //               fontSize: 14, color: ThemeColor.grey),
+                        //           shape: RoundedRectangleBorder(
+                        //               borderRadius:
+                        //                   BorderRadius.circular(10)),
+                        //           backgroundColor: ThemeColor.grey_200,
+                        //         ),
+                        //       )),
+                        // ),
+                        //   ],
+                        // ),
+                        // const SizedBox(height: 32),
+                        // RichText(
+                        //     text: const TextSpan(
+                        //         text: "Don't have account?",
+                        //         style: TextStyle(
+                        //             fontSize: 14, color: ThemeColor.grey),
+                        //         children: [
+                        //       TextSpan(
+                        //           text: " Create now",
+                        //           style: TextStyle(
+                        //               color: ThemeColor.black,
+                        //               fontWeight: FontWeight.bold))
+                        //     ])),
                       ]),
                     )
                   ],
